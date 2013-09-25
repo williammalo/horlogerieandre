@@ -1,0 +1,169 @@
+::selection {
+  background: rgba(0,0,0,0.8);
+  text-shadow: none;
+  color: #fff;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+img {
+  max-width: 100%;
+  border: none;
+}
+a {
+  color: #d00;
+  text-decoration: underline;
+}
+html {
+  overflow-y: scroll;
+  font-family: Palatino;
+  color: rgba(0,0,0,0.9);
+}
+body {
+  margin: 0;
+  line-height: 1.5;
+  background: #f2ede0 url("bg.png");
+  -webkit-background-size: 200px 200px;
+  -moz-background-size: 200px 200px;
+  background-size: 200px 200px;
+}
+html,
+body {
+  min-height: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-variant: small-caps;
+}
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+header {
+  padding: 1em;
+  padding-bottom: 2em;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  background: rgba(255,255,255,0.6);
+}
+header h1 {
+  font-weight: normal;
+  font-size: 4.375em;
+  margin: 0;
+  margin-bottom: -0.3em;
+}
+header img {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+header .sub {
+  font-style: italic;
+  font-size: 1.4em;
+}
+nav {
+  background: #000;
+  text-align: center;
+  padding: 0.5em;
+}
+nav a {
+  color: #fff;
+  padding: 0 4em;
+  text-decoration: none;
+}
+main,
+section {
+  padding: 1em 5%;
+}
+main {
+  width: 100%;
+  display: block;
+  background: #fff;
+}
+section {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+section img {
+  width: 40%;
+  float: right;
+  margin: 0 0 0.5em 0.5em;
+}
+@media screen and (max-width: 1043px) {
+  section {
+    width: 100%;
+  }
+  main,
+  section {
+    padding: 1em 15%;
+  }
+}
+@media screen and (max-width: 856px) {
+  main,
+  section {
+    padding: 1em 10%;
+  }
+}
+@media screen and (max-width: 676px) {
+  main,
+  section {
+    padding: 1em 1em;
+  }
+  header {
+    font-size: 0.66em;
+  }
+}
+@media screen and (max-width: 502px) {
+  section>img {
+    float: none;
+    display: block;
+    widhth: 50%;
+  }
+}
+.banner {
+  content: "";
+  -webkit-box-shadow: inset 0 0 30px rgba(0,0,0,0.6);
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.6);
+  width: 100%;
+  padding-top: 25%;
+  background: url("banner.jpg") center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.ratio-wrap {
+  display: inline-block;
+}
+.ratio-wrap:before {
+  content: "";
+  display: block;
+}
+.ratio-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.shadow {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border: solid 0.5em #fff;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+.spacer {
+  height: 208px;
+  background: rgba(255,255,255,0.6);
+}
