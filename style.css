@@ -15,7 +15,7 @@ img {
   border: none;
 }
 a {
-  color: #d00;
+  color: #7e312e;
   text-decoration: underline;
 }
 html {
@@ -85,12 +85,26 @@ section {
 main {
   width: 100%;
   display: block;
-  background: #fff;
-  background: rgba(255,255,255,0.8);
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.deco {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1em 0;
+  text-align: center;
+  width: 50%;
+}
+.deco img {
+  max-height: 100%;
 }
 section {
   width: 50%;
-  display: inline-block;
   vertical-align: top;
 }
 section img {
@@ -105,28 +119,43 @@ section img {
   main,
   section {
     padding: 1em 15%;
+    padding-left: 10%;
+    padding-right: 20%;
+  }
+  .deco {
+    width: 30%;
   }
 }
 @media screen and (max-width: 856px) {
   main,
   section {
     padding: 1em 10%;
+    padding-left: 5%;
+    padding-right: 15%;
+  }
+  .deco {
+    width: 20%;
   }
 }
 @media screen and (max-width: 676px) {
-  main,
-  section {
-    padding: 1em 1em;
-  }
   header {
     font-size: 0.66em;
   }
 }
-@media screen and (max-width: 502px) {
-  section>img {
+@media screen and (max-width: 620px) {
+  main,
+  section {
+    padding: 1em;
+  }
+  .deco {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  section h2>img {
     float: none;
     display: block;
-    widhth: 50%;
+    width: 50%;
   }
 }
 .banner {
@@ -167,4 +196,9 @@ section img {
 .spacer {
   height: 208px;
   background: rgba(255,255,255,0.4);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
