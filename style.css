@@ -80,7 +80,7 @@ nav a {
 }
 main,
 section {
-  padding: 1em 5%;
+  padding: 3em 0;
 }
 main {
   width: 100%;
@@ -98,66 +98,70 @@ main {
   top: 0;
   padding: 1em 0;
   text-align: center;
-  width: 50%;
+  width: 100%;
 }
 .deco img {
   max-height: 100%;
 }
 section {
   width: 50%;
+  display: inline-block;
   vertical-align: top;
+  padding: 3em 9%;
 }
-section img {
+section h2 img {
   width: 40%;
   float: right;
   margin: 0 0 8px 8px;
 }
-@media screen and (max-width: 1043px) {
-  section {
-    width: 100%;
-  }
-  main,
-  section {
-    padding: 1em 15%;
-    padding-left: 10%;
-    padding-right: 20%;
-  }
-  .deco {
-    width: 30%;
-  }
+.mobile {
+  display: none;
 }
-@media screen and (max-width: 856px) {
-  main,
-  section {
-    padding: 1em 10%;
-    padding-left: 5%;
-    padding-right: 15%;
-  }
-  .deco {
-    width: 20%;
-  }
+html {
+  min-width: 1150px;
 }
-@media screen and (max-width: 676px) {
-  header {
-    font-size: 0.66em;
-  }
-}
-@media screen and (max-width: 620px) {
-  main,
-  section {
-    padding: 1em;
-  }
-  .deco {
-    display: none;
-  }
-}
-@media screen and (max-width: 450px) {
-  section h2>img {
-    float: none;
-    display: block;
-    width: 50%;
-  }
-}
+/*
+@media screen and (max-width: 1150px)
+	section h2 img
+		display:none
+	.mobile
+		display:block
+		width:50%
+		margin-top:1em
+		margin-left:50%
+
+
+@media screen and (max-width: 1043px)
+	section
+		width:100%
+	main,section
+		padding:1em 15%
+		padding-left:10%
+		padding-right:20%
+	.deco
+		width:30%
+@media screen and (max-width: 856px)
+	main,section
+		padding:1em 10%
+		padding-left:5%
+		padding-right:15%
+	.deco
+		width:20%
+
+@media screen and (max-width: 676px)
+	header
+		font-size:.66em
+@media screen and (max-width: 620px)
+	main,section
+		padding:1em
+	.deco
+		display:none
+@media screen and (max-width: 450px)
+	section h2>img
+		float:none
+		display:block
+		width:50%
+*/
 .banner {
   content: "";
   -webkit-box-shadow: inset 0 0 20px rgba(0,0,0,0.4);
