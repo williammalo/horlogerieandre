@@ -109,6 +109,9 @@ main {
   display: block;
   background: #fff;
   background: rgba(255,255,255,0.8);
+  background-image: url("grandfatherclock.png");
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
@@ -121,6 +124,7 @@ main {
   padding: 1em 0;
   text-align: center;
   width: 100%;
+  display: none;
 }
 .deco img {
   max-height: 100%;
@@ -175,11 +179,15 @@ section h2 img {
   }
 }
 @media screen and (max-width: 735px) {
+  main {
+    background-image: none;
+  }
   section {
     width: 60%;
   }
   .deco {
     width: 40%;
+    display: block;
   }
 }
 @media screen and (max-width: 580px) {
